@@ -72,6 +72,43 @@ For further customization and setup guidance, click the button below:
 </a>
 </div>
 
+### Deploy by Using Workflow 🤯
+
+    ```name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start application
+      run: npm start
+    ```
+
 ### Join Us
 
 <div align="center">
@@ -118,7 +155,7 @@ It is lightweight and can be easily customized to add more commands as per your 
 
     ```bash
     git clone https://github.com/caseyweb/JINX-XMD-V2.0.git
-    cd JINX-XMD
+    cd MARCEUSE-XMD
     ```
 
 2. **Install the dependencies:**

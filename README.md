@@ -26,7 +26,7 @@
   </a>
 </div>
 
-### Step 3: Deploy Now
+### 🔹 Deploy Now
 
 For further customization and setup guidance, click the button below:
 

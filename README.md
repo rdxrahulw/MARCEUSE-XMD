@@ -26,21 +26,26 @@
   </a>
 </div>
 
-### 🔹 Get Pair Code
+### Step 3: Deploy Now
+
+For further customization and setup guidance, click the button below:
 
 <div align="center">
-  <a href="empty sorry" target="_blank">
-    <img src="https://img.shields.io/badge/GET%20PAIR%20CODE-Replit-success?style=for-the-badge" alt="Deploy on Replit"/>
+  <a href="https://youtu.be/-oz_u1iMgf8">
+    <img src="https://img.shields.io/badge/Deploy Tutorial-dc3545?style=for-the-badge&logo=youtube" alt="YouTube Link"/>
+  </a>
+  <a href="https://bot-hosting.net/?aff=1373032148830916668">
+    <img src="https://img.shields.io/badge/Deploy on Panel-28a745?style=for-the-badge" alt="Deploy on Panel"/>
   </a>
 </div>
 
-<div align="center">
-  <a href="empty sorry" target="_blank">
-    <img src="https://img.shields.io/badge/GET%20PAIR%20CODE-Easy%20Method-ff4d4d?style=for-the-badge" alt="Generate Pair Code"/>
-  </a>
-</div>
 
-> After getting `creds.json`, upload it to the `session` folder.
+### Deploy Now on Below Panel
+<div align="center">
+<a href="https://dashboard.katabump.com/auth/login#28e446" target="_blank">
+  <img src="https://img.shields.io/badge/Katabump-D6B7D6?style=for-the-badge&logo=server&logoColor=black" alt="Katabump"/>
+</a>
+</div>
 
 ---
 

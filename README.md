@@ -1,26 +1,99 @@
-# 🤖 MARCEUSE-XMD 𝘃1.𝟬
+### 🤖 MARCEUSE-XMD v1.0
 
-This is a WhatsApp bot built using the Baileys library for group management, including features like tagging all members, muting/unmuting, and many more. It's designed to help admins efficiently manage WhatsApp groups.
+*MARCEUSE-XMD* is a powerful multi-device WhatsApp bot built using the [Baileys](https://github.com/WhiskeySockets/Baileys) library. It helps group admins manage members, automate tasks, and enhance engagement with fun and useful features.
 
-<div align="center"> 
-  <a href="https://git.io/typing-svg"> 
+<div align="center">
+  <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=33ff00&center=true&width=910&height=100&lines=MARCEUSE-XMD😈;Multi+Device+Whatsapp+Bot;Coded+By+Caseyrhodes" alt="Typing SVG" />
-  </a> 
-</div> 
+  </a>
+</div>
 
-<div align="center"> 
-  <a href="https://youtube.com/@Nicolaus Daniel"> 
-    <img src="https://files.catbox.moe/z0l0ey.jpg" alt="MARCEUSE-XMD😈" height="300"> 
-  </a> 
+<div align="center">
+  <a href="https://youtube.com/@Nicolaus Daniel">
+    <img src="https://files.catbox.moe/z0l0ey.jpg" alt="MARCEUSE-XMD😈" height="300">
+  </a>
 </div>
 
 ---
 
-## 🚀 Steps to Deploy
+## 🚀 Features
 
-### Step 1: Fork the Repository
+- 🔔 Tag all group members with `.tagall`
+- 🔒 Admin-only command access
+- 🎮 Group games like Tic-Tac-Toe
+- 🔊 Text-to-Speech with `.tts`
+- 🖼️ Sticker creation with `.sticker`
+- 🚫 Anti-link detection
+- ⚠️ Warn and manage group members
+- 📌 Multi-device support via Baileys
 
-Click the button below to fork the Knight Bot repository to your GitHub account:
+---
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+
+- Node.js (v20.x recommended)
+- Git installed
+
+### Step-by-Step Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/caseyweb/JINX-XMD-V2.0.git
+cd MARCEUSE-XMD
+
+# Install dependencies
+npm install
+
+# Start the bot
+node index.js
+```
+
+> ✅ Once the bot starts, scan the QR code shown in the terminal using WhatsApp's Linked Devices feature.
+
+---
+
+*⚙️ GitHub Workflow (CI/CD)*
+
+```yaml
+name: Node.js CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version}}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Start application
+        run: npm start
+```
+
+---
+
+*📦 Deploy Options*
+
+*🔹 Fork the Repository*
 
 <div align="center">
   <a href="https://github.com/Nicolaus-Daniel/MARCEUSE-XMD/fork">
@@ -28,11 +101,7 @@ Click the button below to fork the Knight Bot repository to your GitHub account:
   </a>
 </div>
 
----
-
-### Step 2: Get Pair Code
-
-Deploy the bot and easily connect it to your WhatsApp account by pair code. Click the button below to deploy the bot on Replit.
+*🔹 Get Pair Code*
 
 <div align="center">
   <a href="https://replit.com/@DGXeon/Xeon-PairCode?v=1" target="_blank">
@@ -46,14 +115,11 @@ Deploy the bot and easily connect it to your WhatsApp account by pair code. Clic
   </a>
 </div>
 
-
-### After getting creds.json file, upload it to session folder
+> After getting `creds.json`, upload it to the `session` folder.
 
 ---
 
-### Step 3: Deploy Now
-
-For further customization and setup guidance, click the button below:
+*📺 Deployment Tutorial*
 
 <div align="center">
   <a href="https://youtu.be/-oz_u1iMgf8">
@@ -64,52 +130,9 @@ For further customization and setup guidance, click the button below:
   </a>
 </div>
 
+---
 
-### Deploy Now on Below Panel
-<div align="center">
-<a href="https://dashboard.katabump.com/auth/login#28e446" target="_blank">
-  <img src="https://img.shields.io/badge/Katabump-D6B7D6?style=for-the-badge&logo=server&logoColor=black" alt="Katabump"/>
-</a>
-</div>
-
-### Deploy by Using Workflow 🤯
-
-    ```name: Node.js CI
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [20.x]
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Start application
-      run: npm start
-    ```
-
-### Join Us
+*🧑‍🤝‍🧑 Join the Community*
 
 <div align="center">
   <a href="https://t.me/+3QhFUZHx-nhhZmY1">
@@ -122,59 +145,12 @@ jobs:
 
 ---
 
-## ⚙️ Features
+*📚 License & Credits*
 
-- **Tag all group members** with the `.tagall` command
-- **Admin restricted usage** (Only group admins can use certain commands)
-- **Games** like Tic-Tac-Toe for interactive group engagement
-- **Text-to-Speech** with `.tts`
-- **Sticker creation** with `.sticker`
-- **Anti-link detection** for group safety
-- **Warn and manage group members** with admin control
+This project uses open-source libraries including:
+- [Baileys](https://github.com/WhiskeySockets/Baileys) (MIT License)
+- Other dependencies listed in `package.json`
 
 ---
 
-## 📖 About
-
-Jinx WhatsApp Bot assists group admins by providing them with tools to efficiently manage large WhatsApp groups. The bot uses the Baileys library to interact with the WhatsApp Web API and supports multi-device features.
-
-It is lightweight and can be easily customized to add more commands as per your requirements. The bot runs in a Node.js environment and provides QR code-based authentication to link your WhatsApp account.
-
----
-
-## 🛠️ Setup & Installation
-
-### Prerequisites
-
-- Node.js installed on your system
-- Git installed (for cloning the repository)
-
-### Step-by-Step Setup
-
-1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/caseyweb/JINX-XMD-V2.0.git
-    cd MARCEUSE-XMD
-    ```
-
-2. **Install the dependencies:**
-
-    ```bash
-    npm install
-    ```
-
-3. **Run the bot:**
-
-    ```bash
-    node index.js
-    ```
-
-4. **Scan the QR code:**
-
-    Once the bot starts, a QR code will appear in the terminal. Scan this QR code using the Linked Devices feature in WhatsApp to connect your WhatsApp account with the bot.
-
----
- various open source projects:
-- Baileys (MIT License)
-- Other libraries as listed in package.json
+> 💡 Feel free to contribute, report issues, or suggest new features. Let's build something awesome together!

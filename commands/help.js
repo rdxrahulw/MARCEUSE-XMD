@@ -156,7 +156,7 @@ async function helpCommand(sock, chatId, message) {
 > ʀᴇɢᴀʀᴅs Nicolaus Daniel 2😈😈😈`;
 
     try {
-        const imagePath = path.join(__dirname, '../assets/bot_image.jpg');
+        const imagePath = path.join(__dirname, '../asserts/bot_image.jpg');
         const audioUrl = "https://files.catbox.moe/fi8h5n.mp3"; // put your audio mp3 link here by caseyrhodes 
 
         if (fs.existsSync(imagePath)) {

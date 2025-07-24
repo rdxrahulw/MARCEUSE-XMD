@@ -1,3 +1,209 @@
-//𝐂𝐀𝐒𝐄𝐘𝐑𝐇𝐎𝐃𝐄𝐒 𝐓𝐄𝐂𝐇 𝐏𝐑𝐎𝐏𝐄𝐑𝐓𝐘
+const settings = require('../settings');
+const fs = require('fs');
+const path = require('path');
 
-const _0x2d1b20=_0xdcb9;(function(_0x590ae4,_0x1ad298){const _0x20121a=_0xdcb9,_0x38fecf=_0x590ae4();while(!![]){try{const _0x3bfa63=parseInt(_0x20121a(0x1b1))/0x1+-parseInt(_0x20121a(0x1b9))/0x2+parseInt(_0x20121a(0x1b6))/0x3+parseInt(_0x20121a(0x1c3))/0x4*(-parseInt(_0x20121a(0x1bf))/0x5)+-parseInt(_0x20121a(0x1c2))/0x6*(-parseInt(_0x20121a(0x1b4))/0x7)+-parseInt(_0x20121a(0x1ba))/0x8+parseInt(_0x20121a(0x1b0))/0x9*(parseInt(_0x20121a(0x1b2))/0xa);if(_0x3bfa63===_0x1ad298)break;else _0x38fecf['push'](_0x38fecf['shift']());}catch(_0x54b78e){_0x38fecf['push'](_0x38fecf['shift']());}}}(_0x1945,0xa8a2a));const settings=require(_0x2d1b20(0x1bc)),fs=require('fs'),path=require(_0x2d1b20(0x1c0));function _0x1945(){const _0x160b01=['4730ArPNHp','120363375814828971@newsletter','550991DOGmds','\x0a╭━━━《\x20*MARCEUSE-XMD😈*\x20》━━━━━┈⊷\x0a┃❍⁠⁠╭──────────────\x0a┃❍⁠⁠│▸\x20\x20*Usᴇʀ*\x20:\x20Nicolaus\x20Daniel\x202😈😈😈\x20\x0a┃❍⁠⁠│▸\x20\x20*ʙᴀɪʟᴇʏs*\x20:\x20𝐌𝐮𝐥𝐭𝐢\x20𝐝𝐞𝐯𝐢𝐜𝐞\x0a┃❍⁠⁠│▸\x20\x20*𝖳ʏᴘᴇ*\x20:\x20𝐍𝐨𝐝𝐞𝐣𝐬\x0a┃❍⁠⁠│▸\x20\x20*ᴘʟᴀᴛғᴏʀᴍ*\x20:\x20𝐇𝐞𝐫𝐨𝐤𝐮\x0a┃❍⁠⁠│▸\x20\x20*ᴏᴡɴᴇʀ\x20ɴᴜᴍʙᴇʀ*\x20:\x20+255652398614\x0a┃❍⁠⁠│▸\x20\x20*ᴍᴏᴅᴇ*\x20:\x20|.|\x0a┃❍⁠⁠│▸\x20\x20*ᴄᴏᴍᴍᴀɴᴅs*\x20:\x20215\x0a┃❍⁠⁠│▸\x20\x20*𝖣ᴇᴠᴇʟᴏᴘᴇʀ*\x20:\x20Nicolaus\x20Daniel\x202😈😈😈\x0a┃❍⁠⁠│▸\x20\x20*𝖵ᴇʀsɪᴏɴ*\x20:\x20𝟏.𝟎.𝟎\x0a┃❍⁠⁠╰──────────────\x0a╰━━━━━━━━━━━━━━━━━━━┈⊷\x0a*𝐀𝐯𝐚𝐢𝐥𝐥𝐚𝐛𝐥𝐞\x20𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬:*\x0a╭━━━━━━━━━━━━━━━┈⊷\x0a┃\x20\x20*General\x20Commands*:\x0a║\x20•\x20help\x20or\x20.menu\x0a║\x20•\x20ping\x0a║\x20•\x20alive\x0a║\x20•\x20tts\x20<text>\x0a║\x20•\x20owner\x0a║\x20•\x20joke\x0a║\x20•\x20quote\x0a║\x20•\x20fact\x0a║\x20•\x20weather\x20<city>\x0a║\x20•\x20news\x0a║\x20•\x20attp\x20<text>\x0a║\x20•\x20lyrics\x20<song_title>\x0a║\x20•\x208ball\x20<question>\x0a║\x20•\x20groupinfo\x0a║\x20•\x20staff\x20or\x20.admins\x20\x0a║\x20•\x20vv\x0a║\x20•\x20trt\x20<text>\x20<lang>\x0a║\x20•\x20ss\x20<link>\x0a║\x20•\x20jid\x0a╰━━━━━━━━━━━━━━━┈⊷\x0a╭━━━━━━━━━━━━━━━┈⊷\x0a┃\x20*Admin\x20Commands*:\x0a║\x20•\x20ban\x20@user\x0a║\x20•\x20promote\x20@user\x0a║\x20•\x20demote\x20@user\x0a║\x20•\x20mute\x20<minutes>\x0a║\x20•\x20unmute\x0a║\x20•\x20delete\x20or\x20.del\x0a║\x20•\x20kick\x20@user\x0a║\x20•\x20warnings\x20@user\x0a║\x20•\x20warn\x20@user\x0a║\x20•\x20antilink\x0a║\x20•\x20antibadword\x0a║\x20•\x20clear\x0a║\x20•\x20tag\x20<message>\x0a║\x20•\x20tagall\x0a║\x20•\x20chatbot\x0a║\x20•\x20resetlink\x0a║\x20•\x20welcome\x20<on/off>\x0a║\x20•\x20goodbye\x20<on/off>\x0a╰━━━━━━━━━━━━━━━┈⊷\x0a╭━━━━━━━━━━━━━━━┈⊷\x0a┃\x20*Owner\x20Commands*:\x0a║\x20•\x20mode\x0a║\x20•\x20autostatus\x0a║\x20•\x20clearsession\x0a║\x20•\x20.antidelete\x0a║\x20•\x20cleartmp\x0a║\x20•\x20setpp\x20<reply\x20to\x20image>\x0a║\x20•\x20autoreact\x0a╰━━━━━━━━━━━━━━━┈⊷\x0a╭━━━━━━━━━━━━━━━━┈⊷\x0a┃\x20*Image/Sticker\x20Commands*:\x0a║\x20•\x20blur\x20<image>\x0a║\x20•\x20simage\x20<reply\x20to\x20sticker>\x0a║\x20•\x20sticker\x20<reply\x20to\x20image>\x0a║\x20•\x20tgsticker\x20<Link>\x0a║\x20•\x20meme\x0a║\x20•\x20take\x20<packname>\x20\x0a║\x20•\x20emojimix\x20<emj1>+<emj2>\x0a╰━━━━━━━━━━━━━━━┈⊷\x20\x0a╭━━━━━━━━━━━━━━━┈⊷\x0a┃\x20*Game\x20Commands*:\x0a║\x20❐\x20.tictactoe\x20@user\x0a║\x20❐\x20.hangman\x0a║\x20❐\x20.guess\x20<letter>\x0a║\x20❐\x20.trivia\x0a║\x20❐\x20.answer\x20<answer>\x0a║\x20❐\x20.truth\x0a║\x20❐\x20.dare\x0a╰━━━━━━━━━━━━━━━┈⊷\x0a╭━━━━━━━━━━━━━━━┈⊷\x0a┃\x20*AI\x20Commands*:\x0a║\x20❐\x20\x20.gpt\x20<question>\x0a║\x20❐\x20\x20.gemini\x20<question>\x0a║\x20❐\x20\x20.imagine\x20<prompt>\x0a║\x20❐\x20\x20.flux\x20<prompt>\x0a╰━━━━━━━━━━━━━━━┈⊷\x0a╭━━━━━━━━━━━━━━━━┈⊷\x0a┃\x20*Fun\x20Commands*:\x0a║\x20❐\x20.compliment\x20@user\x0a║\x20❐\x20.insult\x20@user\x0a║\x20❐\x20.flirt\x20\x0a║\x20❐\x20.shayari\x0a║\x20❐\x20.goodnight\x0a║\x20❐\x20.roseday\x0a║\x20❐\x20.character\x20@user\x0a║\x20❐\x20.wasted\x20@user\x0a║\x20❐\x20.ship\x20@user\x0a║\x20❐\x20.simp\x20@user\x0a║\x20❐\x20.stupid\x20@user\x20[text]\x0a╰━━━━━━━━━━━━━━━┈⊷\x0a╭━━━━━━━━━━━━━━━┈⊷\x0a┃\x20*Textmaker*:\x0a║\x20•\x20metallic\x20<text>\x0a║\x20•\x20ice\x20<text>\x0a║\x20•\x20snow\x20<text>\x0a║\x20•\x20impressive\x20<text>\x0a║\x20•\x20matrix\x20<text>\x0a║\x20•\x20light\x20<text>\x0a║\x20•\x20neon\x20<text>\x0a║\x20•\x20devil\x20<text>\x0a║\x20•\x20purple\x20<text>\x0a║\x20•\x20thunder\x20<text>\x0a║\x20•\x20leaves\x20<text>\x0a║\x20•\x201917\x20<text>\x0a║\x20•\x20arena\x20<text>\x0a║\x20•\x20hacker\x20<text>\x0a║\x20•\x20sand\x20<text>\x0a║\x20•\x20blackpink\x20<text>\x0a║\x20•\x20glitch\x20<text>\x0a║\x20•\x20fire\x20<text>\x0a╰━━━━━━━━━━━━━━━┈⊷\x0a╭━━━━━━━━━━━━━━┈⊷\x0a┃\x20*Downloader*:\x0a║\x20•\x20play\x20<song_name>\x0a║\x20•\x20song\x20<song_name>\x0a║\x20•\x20instagram\x20<link>\x0a║\x20•\x20facebook\x20<link>\x0a║\x20•\x20tiktok\x20<link>\x0a║\x20•\x20video\x20<song\x20name>\x0a║\x20•\x20ytmp4\x20<Link>\x0a╰━━━━━━━━━━━━━━━┈⊷\x0a╭━━━━━━━━━━━━━━━┈⊷\x0a┃\x20*Github\x20Commands:*\x0a║\x20•\x20git\x0a║\x20•\x20github\x0a║\x20•\x20sc\x0a║\x20•\x20script\x0a║\x20•\x20repo\x0a║\x20•\x20tgs\x20<Link>\x0a╰━━━━━━━━━━━━━━━┈⊷\x0a\x0a>\x20ʀᴇɢᴀʀᴅs\x20Nicolaus\x20Daniel\x202😈😈😈','2655537ofszuI','https://files.catbox.moe/z0l0ey.jpg','*MARCEUSE-XMD😈*','308108OaXNgU','10237032yDxYUq','error','../settings','join','Bot\x20image\x20not\x20found\x20at:','3855GghyFb','path','exports','6vqXwPY','6524lojuBE','https://files.catbox.moe/y0mj2k.mp3','audio/mpeg','existsSync','readFileSync','sendMessage','24147uxcvaV','1148963MeSZiR'];_0x1945=function(){return _0x160b01;};return _0x1945();}function _0xdcb9(_0x4a339a,_0x37b3fc){const _0x19450d=_0x1945();return _0xdcb9=function(_0xdcb96,_0x2dd088){_0xdcb96=_0xdcb96-0x1b0;let _0x78b41c=_0x19450d[_0xdcb96];return _0x78b41c;},_0xdcb9(_0x4a339a,_0x37b3fc);}async function helpCommand(_0x140337,_0x51acd0,_0x261080){const _0x38fc05=_0x2d1b20,_0x5ad7f5=_0x38fc05(0x1b5);try{const _0x4b7864=path[_0x38fc05(0x1bd)](__dirname,_0x38fc05(0x1b7)),_0x2e6eac=_0x38fc05(0x1c4);if(fs[_0x38fc05(0x1c6)](_0x4b7864)){const _0x3ae22f=fs[_0x38fc05(0x1c7)](_0x4b7864);await _0x140337[_0x38fc05(0x1c8)](_0x51acd0,{'image':_0x3ae22f,'caption':_0x5ad7f5,'contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':_0x38fc05(0x1b3),'newsletterName':_0x38fc05(0x1b8),'serverMessageId':-0x1}}},{'quoted':_0x261080});}else console[_0x38fc05(0x1bb)](_0x38fc05(0x1be),_0x4b7864),await _0x140337[_0x38fc05(0x1c8)](_0x51acd0,{'text':_0x5ad7f5,'contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'120363375814828971@newsletter','newsletterName':'POWERED\x20BY\x20NICOLAUS\x20DANIEL\x202😈😈😈','serverMessageId':-0x1}}},{'quoted':_0x261080});await _0x140337[_0x38fc05(0x1c8)](_0x51acd0,{'audio':{'url':_0x2e6eac},'mimetype':_0x38fc05(0x1c5),'ptt':!![]},{'quoted':_0x261080});}catch(_0x52a999){console['error']('Error\x20in\x20help\x20command:',_0x52a999),await _0x140337[_0x38fc05(0x1c8)](_0x51acd0,{'text':_0x5ad7f5});}}module[_0x2d1b20(0x1c1)]=helpCommand;
+async function helpCommand(sock, chatId, message) {
+    const helpMessage = `
+╭━━━《 *MARCEUSE-𝐗𝐌𝐃😈* 》━━━━━┈⊷
+┃❍⁠⁠╭──────────────
+┃❍⁠⁠│▸  *Usᴇʀ* : Nicolaus Daniel😈
+┃❍⁠⁠│▸  *ʙᴀɪʟᴇʏs* : 𝐌𝐮𝐥𝐭𝐢 𝐝𝐞𝐯𝐢𝐜𝐞
+┃❍⁠⁠│▸  *𝖳ʏᴘᴇ* : 𝐍𝐨𝐝𝐞𝐣𝐬
+┃❍⁠⁠│▸  *ᴘʟᴀᴛғᴏʀᴍ* : 𝐇𝐞𝐫𝐨𝐤𝐮
+┃❍⁠⁠│▸  *ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ* : +255652398614
+┃❍⁠⁠│▸  *ᴍᴏᴅᴇ* : |.|
+┃❍⁠⁠│▸  *ᴄᴏᴍᴍᴀɴᴅs* : 215
+┃❍⁠⁠│▸  *𝖣ᴇᴠᴇʟᴏᴘᴇʀ* : Nicolaus Daniel 😈
+┃❍⁠⁠│▸  *𝖵ᴇʀsɪᴏɴ* : 𝟏.𝟎.𝟎
+┃❍⁠⁠╰──────────────
+╰━━━━━━━━━━━━━━━━━━━┈⊷
+*𝐀𝐯𝐚𝐢𝐥𝐥𝐚𝐛𝐥𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬:*
+╭━━━━━━━━━━━━━━━┈⊷
+┃  *General Commands*:
+║ • help or .menu
+║ • ping
+║ • alive
+║ • tts <text>
+║ • owner
+║ • joke
+║ • quote
+║ • fact
+║ • weather <city>
+║ • news
+║ • attp <text>
+║ • lyrics <song_title>
+║ • 8ball <question>
+║ • groupinfo
+║ • staff or .admins 
+║ • vv
+║ • trt <text> <lang>
+║ • ss <link>
+║ • jid
+╰━━━━━━━━━━━━━━━┈⊷
+╭━━━━━━━━━━━━━━━┈⊷
+┃ *Admin Commands*:
+║ • ban @user
+║ • promote @user
+║ • demote @user
+║ • mute <minutes>
+║ • unmute
+║ • delete or .del
+║ • kick @user
+║ • warnings @user
+║ • warn @user
+║ • antilink
+║ • antibadword
+║ • clear
+║ • tag <message>
+║ • tagall
+║ • chatbot
+║ • resetlink
+║ • welcome <on/off>
+║ • goodbye <on/off>
+╰━━━━━━━━━━━━━━━┈⊷
+╭━━━━━━━━━━━━━━━┈⊷
+┃ *Owner Commands*:
+║ • mode
+║ • autostatus
+║ • clearsession
+║ • .antidelete
+║ • cleartmp
+║ • setpp <reply to image>
+║ • autoreact
+╰━━━━━━━━━━━━━━━┈⊷
+╭━━━━━━━━━━━━━━━━┈⊷
+┃ *Image/Sticker Commands*:
+║ • blur <image>
+║ • simage <reply to sticker>
+║ • sticker <reply to image>
+║ • tgsticker <Link>
+║ • meme
+║ • take <packname> 
+║ • emojimix <emj1>+<emj2>
+╰━━━━━━━━━━━━━━━┈⊷ 
+╭━━━━━━━━━━━━━━━┈⊷
+┃ *Game Commands*:
+║ ❐ .tictactoe @user
+║ ❐ .hangman
+║ ❐ .guess <letter>
+║ ❐ .trivia
+║ ❐ .answer <answer>
+║ ❐ .truth
+║ ❐ .dare
+╰━━━━━━━━━━━━━━━┈⊷
+╭━━━━━━━━━━━━━━━┈⊷
+┃ *AI Commands*:
+║ ❐  .gpt <question>
+║ ❐  .gemini <question>
+║ ❐  .imagine <prompt>
+║ ❐  .flux <prompt>
+╰━━━━━━━━━━━━━━━┈⊷
+╭━━━━━━━━━━━━━━━━┈⊷
+┃ *Fun Commands*:
+║ ❐ .compliment @user
+║ ❐ .insult @user
+║ ❐ .flirt 
+║ ❐ .shayari
+║ ❐ .goodnight
+║ ❐ .roseday
+║ ❐ .character @user
+║ ❐ .wasted @user
+║ ❐ .ship @user
+║ ❐ .simp @user
+║ ❐ .stupid @user [text]
+╰━━━━━━━━━━━━━━━┈⊷
+╭━━━━━━━━━━━━━━━┈⊷
+┃ *Textmaker*:
+║ • metallic <text>
+║ • ice <text>
+║ • snow <text>
+║ • impressive <text>
+║ • matrix <text>
+║ • light <text>
+║ • neon <text>
+║ • devil <text>
+║ • purple <text>
+║ • thunder <text>
+║ • leaves <text>
+║ • 1917 <text>
+║ • arena <text>
+║ • hacker <text>
+║ • sand <text>
+║ • blackpink <text>
+║ • glitch <text>
+║ • fire <text>
+╰━━━━━━━━━━━━━━━┈⊷
+╭━━━━━━━━━━━━━━┈⊷
+┃ *Downloader*:
+║ • play <song_name>
+║ • song <song_name>
+║ • instagram <link>
+║ • facebook <link>
+║ • tiktok <link>
+║ • video <song name>
+║ • ytmp4 <Link>
+╰━━━━━━━━━━━━━━━┈⊷
+╭━━━━━━━━━━━━━━━┈⊷
+┃ *Github Commands:*
+║ • git
+║ • github
+║ • sc
+║ • script
+║ • repo
+║ • tgs <Link>
+╰━━━━━━━━━━━━━━━┈⊷
+
+> ʀᴇɢᴀʀᴅs Nicolaus Daniel 2😈😈😈`;
+
+    try {
+        const imagePath = path.join(__dirname, '../assets/bot_image.jpg');
+        const audioUrl = "https://files.catbox.moe/sd3ljy.mp3"; // put your audio mp3 link here by caseyrhodes 
+
+        if (fs.existsSync(imagePath)) {
+            const imageBuffer = fs.readFileSync(imagePath);
+
+            await sock.sendMessage(chatId, {
+                image: imageBuffer,
+                caption: helpMessage,
+                contextInfo: {
+                    forwardingScore: 1,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363375814828971@newsletter',
+                        newsletterName: 'MARCEUSE-XMD😈',
+                        serverMessageId: -1
+                    }
+                }
+            }, { quoted: message });
+        } else {
+            console.error('Bot image not found at:', imagePath);
+            await sock.sendMessage(chatId, {
+                text: helpMessage,
+                contextInfo: {
+                    forwardingScore: 1,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363375814828971@newsletter',
+                        newsletterName: 'POWERED BY NICOLAUS DANIEL 😈',
+                        serverMessageId: -1
+                    }
+                }
+            }, { quoted: message });
+        }
+
+        // 🔊 Send audio message after menu
+        await sock.sendMessage(chatId, {
+            audio: { url: audioUrl },
+            mimetype: 'audio/mpeg',
+            ptt: true
+        }, { quoted: message });
+
+    } catch (error) {
+        console.error('Error in help command:', error);
+        await sock.sendMessage(chatId, { text: helpMessage });
+    }
+}
+
+module.exports = helpCommand;
+
+//msee iko hivi don't edit just add url mp3 there you are done fitty bro made by muller friend\\

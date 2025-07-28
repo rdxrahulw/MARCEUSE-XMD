@@ -1,9 +1,9 @@
 const settings = {
-  packname: 'MARCEUSE-XMD😈',
+  packname: 'RDX 😈',
   author: '‎',
-  botName: "MARCEUSE-XMD😈",
-  botOwner: 'Nicolaus Daniel 2😈😈😈', // Your name
-  ownerNumber: '2556523xxxx', //Set your number here without + symbol, just add country code & number without any space
+  botName: "RDX RAHUL 😈",
+  botOwner: 'RDX 😈😈😈', // Your name
+  ownerNumber: '93770603875', //Set your number here without + symbol, just add country code & number without any space
   giphyApiKey: 'qnl7ssQChTdPjsKta2Ax2LMaGXz303tq',
   commandMode: "public",
   description: "This is a bot for managing group commands and automating tasks.",
